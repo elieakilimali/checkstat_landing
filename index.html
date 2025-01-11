@@ -90,7 +90,7 @@
         </button>
     </header>
 
-    <section class="section-background text-white flex items-center justify-between px-[10%] py-20">
+    <section class=" text-white flex items-center justify-between px-[10%] py-20">
         <!-- Texte -->
         <div class="max-w-lg w-1/2">
             <h2 class="text-5xl font-bold leading-tight">We Simplify <span class="text-cyan-400">Eligibility Management</span></h2>
@@ -107,61 +107,65 @@
 
 
     <!-- ==================================================== -->
-    <section class="relative bg-black text-white py-24 px-[10%] overflow-hidden">
-        <!-- Formes abstraites en arrière-plan -->
-        <div class="absolute inset-0 -z-10">
-            <div class="absolute top-0 left-0 w-72 h-72 bg-cyan-400 opacity-20 rounded-full blur-[150px]"></div>
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500 opacity-10 rounded-full blur-[200px]"></div>
-        </div>
-    
-        <!-- Contenu principal -->
-        <div class="text-center max-w-4xl mx-auto">
-            <h2 class="text-5xl font-extrabold mb-6 leading-tight">
-                Pourquoi <span class="text-cyan-400">CheckStat ?</span>
+  <!-- SECTION EXPLICATION MODERNE -->
+  <section class="explanation-section py-32 px-[10%] bg-black text-white relative overflow-hidden">
+    <!-- Formes en arrière-plan -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="blob w-[500px] h-[500px] bg-cyan-400 opacity-20 rounded-full blur-[150px] top-0 left-0"></div>
+        <div class="blob w-[400px] h-[400px] bg-cyan-400 opacity-30 rounded-full blur-[150px] bottom-0 right-0"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10 items-center">
+        <!-- Texte -->
+        <div class="space-y-6">
+            <h2 class="text-5xl font-extrabold leading-tight">
+                Pourquoi <span class="text-cyan-400">CheckStat</span> est essentiel ?
             </h2>
-            <p class="text-lg text-gray-400 leading-relaxed mb-12">
-                CheckStat simplifie la gestion de l'éligibilité, sécurise l'accès aux services 
-                et assure un suivi financier transparent. Une solution moderne et adaptable 
-                conçue pour répondre aux besoins de plusieurs secteurs.
+            <p class="text-gray-400 text-lg leading-relaxed">
+                CheckStat simplifie et sécurise la gestion de l'éligibilité et le suivi financier. Notre plateforme s'adapte à divers secteurs tels que l'éducation, la santé et l'administration publique.
             </p>
+            <ul class="space-y-4 text-lg">
+                <li class="flex items-center"><span class="text-cyan-400 text-2xl mr-3">✔️</span> Gestion automatisée de l'accès.</li>
+                <li class="flex items-center"><span class="text-cyan-400 text-2xl mr-3">✔️</span> Protection avancée des données.</li>
+                <li class="flex items-center"><span class="text-cyan-400 text-2xl mr-3">✔️</span> Solution adaptée à tous les secteurs.</li>
+            </ul>
         </div>
-    
-        <!-- Points clés améliorés -->
-        <div class="grid md:grid-cols-3 gap-12 mt-12">
-            <!-- Card 1 -->
-            <div class="p-8 bg-gradient-to-br from-black via-gray-900 to-gray-800 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">🔒 Sécurisé & Fiable</h3>
-                <p class="text-gray-400 leading-relaxed">
-                    Construit avec des normes de sécurité avancées pour protéger vos données sensibles.
-                </p>
-            </div>
-    
-            <!-- Card 2 -->
-            <div class="p-8 bg-gradient-to-br from-black via-gray-900 to-gray-800 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">🌐 Adaptable & Flexible</h3>
-                <p class="text-gray-400 leading-relaxed">
-                    Une solution personnalisable, parfaite pour l'éducation, la santé, l'administration publique et bien plus encore.
-                </p>
-            </div>
-    
-            <!-- Card 3 -->
-            <div class="p-8 bg-gradient-to-br from-black via-gray-900 to-gray-800 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">💰 Suivi Financier Clair</h3>
-                <p class="text-gray-400 leading-relaxed">
-                    Suivi des paiements et gestion des accès en toute transparence.
-                </p>
+
+        <!-- Image stylisée -->
+        <div class="relative">
+            <div class="w-full h-[350px] bg-gradient-to-tr from-cyan-400 to-cyan-600 rounded-3xl shadow-lg flex items-center justify-center">
+                <span class="text-black text-3xl font-bold">CheckStat in Action</span>
             </div>
         </div>
+    </div>
+</section>
+
+
+<!-- FONCTIONNALITE  -->
+<section class="section-background  features-section py-32 text-center">
+    <h2 class="text-5xl font-extrabold mb-12">Fonctionnalités <span class="text-cyan-400">Clés</span></h2>
     
-        <!-- Call to Action -->
-        <div class="text-center mt-16">
-            <a href="#" class="inline-block px-10 py-4 text-lg font-semibold bg-cyan-400 text-black rounded-lg shadow-md hover:bg-cyan-300 transition duration-300">
-                En savoir plus
-            </a>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-[10%]">
+        <!-- Fonctionnalité 1 -->
+        <div class="card-effect">
+            <h3 class="text-2xl font-bold mb-4">📊 Suivi Financier</h3>
+            <p>Analysez et gérez les flux financiers de manière automatisée avec des rapports détaillés.</p>
         </div>
-    </section>
-    
-    
+
+        <!-- Fonctionnalité 2 -->
+        <div class="card-effect">
+            <h3 class="text-2xl font-bold mb-4">🔐 Gestion des Éligibilités</h3>
+            <p>Définissez des critères clairs pour accéder aux services en toute sécurité et conformité.</p>
+        </div>
+
+        <!-- Fonctionnalité 3 -->
+        <div class="card-effect">
+            <h3 class="text-2xl font-bold mb-4">📡 Accessibilité Multisectorielle</h3>
+            <p>Une solution adaptable pour l'éducation, la santé, l'administration et les entreprises.</p>
+        </div>
+    </div>
+</section>
+
     
 </body>
 </html>
