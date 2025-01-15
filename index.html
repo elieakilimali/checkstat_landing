@@ -71,38 +71,76 @@
 
     <!-- Image en arrière-plan -->
     <div class="background-image"></div>
-
-    <header class="py-4 px-[10%] flex justify-between items-center">
+    <header class="py-4 px-4 sm:px-6 md:px-10 flex justify-between items-center">
         <!-- Logo -->
         <h1 class="text-2xl font-bold text-cyan-400">CheckStat</h1>
-        
+    
         <!-- Menu -->
-        <nav class="flex space-x-6">
+        <nav class="hidden md:flex space-x-6">
             <a href="#" class="hover:text-cyan-400 transition">Home</a>
             <a href="#" class="hover:text-cyan-400 transition">Services</a>
             <a href="#" class="hover:text-cyan-400 transition">About Us</a>
             <a href="#" class="hover:text-cyan-400 transition">Contact</a>
         </nav>
-        
-        <!-- Bouton CTA -->
-        <button class="bg-cyan-400 text-black px-6 py-2 rounded-lg hover:bg-cyan-300 transition">
+    
+        <!-- Bouton CTA visible uniquement sur les grands écrans -->
+        <button class="hidden md:block bg-cyan-400 text-black px-6 py-2 rounded-lg hover:bg-cyan-300 transition">
             Get Started
         </button>
+    
+        <!-- Menu Mobile -->
+        <div class="md:hidden">
+            <button id="hamburger" class="text-cyan-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
     </header>
+    
+    <!-- Menu mobile déroulant -->
+    <div id="mobile-menu" class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-10 hidden">
+        <div class="flex justify-end p-4">
+            <button id="close-menu" class="text-cyan-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="flex flex-col items-center space-y-6">
+            <a href="#" class="text-white hover:text-cyan-400 transition">Home</a>
+            <a href="#" class="text-white hover:text-cyan-400 transition">Services</a>
+            <a href="#" class="text-white hover:text-cyan-400 transition">About Us</a>
+            <a href="#" class="text-white hover:text-cyan-400 transition">Contact</a>
+            
+            <!-- Bouton CTA dans le menu mobile -->
+            <button class="bg-cyan-400 text-black px-6 py-2 rounded-lg hover:bg-cyan-300 transition">
+                Get Started
+            </button>
+        </nav>
+    </div>
+    
+    <!-- Home Section  -->
 
-    <section class=" text-white flex items-center justify-between px-[10%] py-20">
-        <!-- Texte -->
-        <div class="max-w-lg w-1/2">
-            <h2 class="text-5xl font-bold leading-tight">We Simplify <span class="text-cyan-400">Eligibility Management</span></h2>
-            <p class="mt-6 text-lg text-gray-400">CheckStat vous aide à gérer l'accès aux services de manière sécurisée et automatisée.</p>
-            <button class="mt-8 bg-cyan-400 text-black px-8 py-3 rounded-lg hover:bg-cyan-300 transition">Discover More</button>
-        </div>
-        
-        <!-- Image stylisée -->
-        <div class="relative w-1/2">
-            <img src="./images/Chip_Pictures___Freepik-removebg-preview.png" alt="CheckStat Image" class="rounded-lg shadow-lg">
-        </div>
-    </section>  
+<section class="text-white flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-[10%] py-20">
+    <!-- Texte -->
+    <div class="max-w-lg w-full md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+            We Simplify <span class="text-cyan-400">Eligibility Management</span>
+        </h2>
+        <p class="mt-6 text-lg text-gray-400">
+            CheckStat vous aide à gérer l'accès aux services de manière sécurisée et automatisée.
+        </p>
+        <button class="mt-8 bg-cyan-400 text-black px-8 py-3 rounded-lg hover:bg-cyan-300 transition">
+            Discover More
+        </button>
+    </div>
+
+    <!-- Image stylisée -->
+    <div class="relative w-full md:w-1/2">
+        <img src="./images/Chip_Pictures___Freepik-removebg-preview.png" alt="CheckStat Image" class="rounded-lg shadow-lg w-full h-auto">
+    </div>
+</section>
 
 
 
@@ -167,5 +205,20 @@
 </section>
 
     
+
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const closeMenu = document.getElementById("close-menu");
+
+    hamburger.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+    });
+
+    closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+    });
+</script>
 </body>
 </html>
