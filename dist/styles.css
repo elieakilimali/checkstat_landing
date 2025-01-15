@@ -606,6 +606,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -616,14 +620,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.block {
-  display: block;
 }
 
 .flex {
@@ -638,6 +634,10 @@ video {
   display: none;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-\[350px\] {
   height: 350px;
 }
@@ -650,16 +650,12 @@ video {
   height: 500px;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-auto {
   height: auto;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-\[400px\] {
@@ -672,10 +668,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .max-w-lg {
@@ -822,11 +814,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .text-center {
@@ -981,7 +968,7 @@ video {
 h2 {
   font-size: 3rem;
   font-weight: 800;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: white;
 }
 
@@ -1038,6 +1025,8 @@ h2 span {
   box-shadow: 0 0 25px rgba(8, 145, 178, 0.7);
 }
 
+/* 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 */
+
 .hover\:bg-cyan-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(103 232 249 / var(--tw-bg-opacity, 1));
@@ -1048,15 +1037,10 @@ h2 span {
   color: rgb(34 211 238 / var(--tw-text-opacity, 1));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 @media (min-width: 640px) {
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .sm\:px-\[10\%\] {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .sm\:text-4xl {
@@ -1098,19 +1082,17 @@ h2 span {
     flex-direction: row;
   }
 
-  .md\:bg-cyan-400 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(34 211 238 / var(--tw-bg-opacity, 1));
-  }
-
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:px-\[10\%\] {
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-5xl {
